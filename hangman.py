@@ -146,7 +146,7 @@ while True:
     letter = input("Enter a letter: ").lower()
 
     if letter in wordcoice:
-        print("welldone ig")
+        print("Correct letter!")
         found_letters.append(letter)
     else:
         a += 1
@@ -154,7 +154,7 @@ while True:
         
     if all(letter in found_letters for letter in wordcoice):
         print(f"\nWord was{hidden_word(wordcoice, found_letters)}")
-        print("congrats")
+        print("Congratulations!")
         break
     if a == 6:
         print(gameover)
